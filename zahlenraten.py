@@ -1,15 +1,19 @@
 #zahlenraten
 
 import random
-zzahl=random.randint(1,1000)
-i = 0;
 title = "Willkommen beim Zahlen-Raten_Spiel!"
-text ="Bitte versuch meine Zahl zwischen 1 und 1000 zu raten"
+print(title)
+von = int(input("Bitte geben Sie den Ersten Wert des Zallenfeldes ein :"))
+bis = int(input("Bitte geben Sie den zweiten und letzten Wert des Zallenfeldes ein: "))
+zzahl=random.randint(von,bis)
+i = 0;
+
+text ="Bitte versuch meine Zahl zwischen",von,"und ",bis," zu raten"
 eingabeText ="Dein Versuch"
 counter = 0
-print(title)
+
 print(text)
-#uzahl = int(input(eingabeText))      
+#uzahl = int(input(eingabeText))
 fertig = False
 
 while (fertig == False):
@@ -27,4 +31,3 @@ while (fertig == False):
 
 print("super du hast dafür nur ",counter," Versuche benötigt")
 print("ende")
-        
